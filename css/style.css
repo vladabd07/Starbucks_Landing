@@ -15,6 +15,7 @@ body {
 
 h1, h2 {
   font-weight: 800;
+  margin: 0;
 }
 
 a {
@@ -32,22 +33,76 @@ ul, li {
   padding: 0 15px;
 }
 
+.text-gradient {
+  background: linear-gradient(263.46deg, #237249 3.14%, #35C66B 87.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title {
+  font-size: 80px;
+  line-height: 88px;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+}
+
+.header {
+  padding: 50px 0;
+}
 .header .container {
   display: flex;
   align-items: baseline;
-  gap: 95px;
 }
 .header__logo {
   font-weight: 800;
   font-size: 37px;
   letter-spacing: -0.03em;
-  background: linear-gradient(263.46deg, #237249 3.14%, #35C66B 87.2%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .header__nav-list {
   display: flex;
-  gap: 30px;
   margin: 0;
   padding: 0;
+}
+.header__nav-item {
+  margin: 0 0 0 95px;
+}
+.welcome__title {
+  margin-bottom: 55px;
+}
+.welcome__text {
+  margin-bottom: 55px;
+}
+.welcome__btns-wrapper {
+  display: flex;
+  gap: 15px;
+}
+.btn {
+  padding: 20px 80px;
+  background: linear-gradient(265.23deg, #237249 6.79%, #35C66B 97.2%);
+  border-radius: 83px;
+  font-weight: 640;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+.link {
+  padding: 20px 55px;
+  background: #121517;
+  border: 1.02264px solid #DADADA;
+  border-radius: 83px;
+  letter-spacing: -0.03em;
+  color: #D9D9D9;
+}
+
+.stats__num {
+  font-size: 62px;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+}
+.stats__num::after {
+  content: "+";
+  background: linear-gradient(266.83deg, #237249 -46.81%, #35C66B 52.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }/*# sourceMappingURL=style.css.map */
