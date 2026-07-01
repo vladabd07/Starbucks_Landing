@@ -275,16 +275,55 @@ background: linear-gradient(266.83deg, #237249 -46.81%, #35C66B 52.2%);
   margin: 80px 0 0 0;
 
 
+    &__badge {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    
+
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+
+
+      width: 140px;
+      height: 140px;
+
+      z-index: 10;
+
+      font-weight: 500;
+      font-size: 32px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #FFFFFF;
+
+      transform: translate(-50%, -50%);
+
+      background: url("/images/icons/Star.svg") center center no-repeat;
+      background-size: contain;
+      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.22));
+    }
+
 		&__container {
       max-width: 1030px;
-
       display: flex;
       justify-content: space-around;
 
       padding: 55px 0 25px 0;
       border-radius: 46px;
       background-color: #fff;
+
+      &.backlight::before {
+        top: 35px;
+        left: -5px;
+        width: 420px;
+        height: 300px;
+        opacity: 0.9;
+      }
+
     }
+
+
 
 		&__img-wrapper {
       display: flex;
@@ -307,6 +346,8 @@ background: linear-gradient(266.83deg, #237249 -46.81%, #35C66B 52.2%);
       }
 		}
 
+
+
 		&__icon {
       width: 146px;
 
@@ -323,7 +364,7 @@ background: linear-gradient(266.83deg, #237249 -46.81%, #35C66B 52.2%);
       width: 210px;  
     }
 
-    &__icon--heart{
+ &__icon--heart{
       top: calc(50% - 90px);
       left: calc(50% - 66px);
     }
@@ -347,6 +388,7 @@ background: linear-gradient(266.83deg, #237249 -46.81%, #35C66B 52.2%);
       letter-spacing: -0.02em;
       color: rgba(18, 21, 23, 0.9);
 }
+
 }
 .container {
 }
